@@ -1,0 +1,76 @@
+---
+description: >
+  This layout can be used for any page requring access to the full width of the page, unconstrained by a grid.
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--
+    OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
+    OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
+    OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
+    OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
+    OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
+    OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
+    OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
+    OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
+    OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
+    OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
+    OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
+    OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
+    OOOOOOOOOOOZOOOOOOOOOOOOOOOOOZOOOOOOOOOOOOOOOO8OOOOOOOOOOOOO
+    OOOOOOOOI...........OOOOOO.........OOOOOOOOOOO.?OOOOOOOOOOOO
+    OOOOOO=.....~OOO:...OOOOO....=OO,..OOOOOOOOOO...OOOOOOOOOOOO
+    OOOOO....ZOOOOOOOOOOOOOO....OOOOOOOOOOOOOOOO.....OOOOOOOOOOO
+    OOOO$...OOOOOOOOOOOOOOOO....OOOOOOOOOOOOOOOO......OOOOOOOOOO
+    OOOO...~OOOOOOOOOOOOOOOOO.....OOOOOOOOOOOOO...O...OOOOOOOOOO
+    OOOO...OOOOOO.......OOOOOO.......OOOOOOOOO...OOO...OOOOOOOOO
+    OOOO...OOOOOO.......OOOOOOOOO......OOOOOOO.OOOOOOO,.OOOOOOOO
+    OOOO....OOOOOOOOO...OOOOOOOOOOOO....OOOOO.. OOOOO...OOOOOOOO
+    OOOOO...OOOOOOOOO...OOOOOOOOOOOO=...OOOO...OOO,OOO...OOOOOOO
+    OOOOO:....OOOOOOO...OOOOOOOOOOOO....OOO..... ....OZ...OOOOOO
+    OOOOOO8.............OOOOO..........OOOO.......OOOOO...:OOOOO
+    OOOOOOOOO...........OOOOO........ZOOOO....~OOOOOOOOO...OOOOO
+    OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
+    OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
+    OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
+    -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+
+    {% if page.collection == "team" %}
+      <title>{{ page.firstname | escape }} {{ page.lastname | escape }} - {{ site.title | escape }}</title>
+    {% else %}
+      <title>{% if page.title %}{{ page.title | escape }} - {% endif %}{{ site.title | escape }}</title>
+    {% endif %}
+
+    <link rel="stylesheet" href="{{ '/assets/vendor/uswds/css/uswds.min.css' | prepend: site.baseurl }}">
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | prepend: site.baseurl }}">
+  </head>
+  <body class="{{ page.bodyClasses }}">
+
+    {% include header.html %}
+
+    <div id="main-content">
+      {{ content }}
+    </div>
+
+    {% include footer.html %}
+
+    <script src="{{ '/assets/vendor/jquery/js/jquery.min.js' | prepend: site.baseurl }}"></script>
+    <script src="{{ '/assets/vendor/uswds/js/uswds.min.js' | prepend: site.baseurl }}"></script>
+    <script src="{{ site.baseurl }}/assets/js/global.js"></script>
+    {% if page.custom_js %}
+      {% for file in page.custom_js %}
+        <script src="{{ site.baseurl }}/assets/js/{{ file }}.js"></script>
+      {% endfor %}
+    {% endif %}
+
+    <!-- We participate in the US government's analytics program. See the data at analytics.usa.gov. -->
+    <script async type="text/javascript" src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=GSA" id="_fed_an_ua_tag"></script>
+
+  </body>
+</html>

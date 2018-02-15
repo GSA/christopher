@@ -1,0 +1,26 @@
+{
+  "name": "cto-website",
+  "description": "Website for the GSA Office of the Chief Technology Officer",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GSA/cto-website.git"
+  },
+  "author": "GSA",
+  "license": "CC0-1.0",
+  "bugs": {
+    "url": "https://github.com/GSA/cto-website/issues"
+  },
+  "homepage": "https://github.com/GSA/cto-website#readme",
+  "scripts": {
+    "assets": "gulp copy-assets"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  },
+  "dependencies": {
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.1.1",
+    "lunr": "^0.7.2",
+    "uswds": "^1.0.0"
+  }
+}
