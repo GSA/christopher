@@ -6,10 +6,10 @@ Named after the initial version of the Turing machine referenced as Christopher 
 
 ---
 
-This is the first iteration of GSA's automated code scanning platform - this focuses on approved SaaS tools:
-- GSA org on GitHub.com
-- CircleCI - free version for open source projects
-- CodeClimate - free version for open source projects
+Repo for building GSA's automated code scanning platform.  More info found in the repo [wiki](https://github.com/GSA/christopher/wiki) and primarily interested in three paths:
+1. Open source code
+2. Private code repositories that want to be open
+3. Internal code and/or funky code
 
 ---
 
