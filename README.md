@@ -1,6 +1,6 @@
 # christopher
 
-![Alan Turing](https://github.com/gsa/christopher/turing.jpg "Alan Turing")
+![Alan Turing](https://github.com/GSA/christopher/blob/master/turing.jpg "Alan Turing")
 
 Named after the initial version of the Turing machine referenced as Christopher in *[The Imitation Game](https://en.wikipedia.org/wiki/The_Imitation_Game).*
 
