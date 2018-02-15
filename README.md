@@ -6,7 +6,8 @@ Named after the initial version of the Turing machine referenced as Christopher 
 
 ---
 
-Repo for building GSA's automated code scanning platform.  More info found in the repo [wiki](https://github.com/GSA/christopher/wiki) and primarily interested in three paths:
+Repo for building GSA's automated code scanning platform.  More info found in the repo [wiki](https://github.com/GSA/christopher/wiki) and primarily interested in three paths of continuous code deployment w/ scanning:
+
 1. Open source code
 2. Private code repositories that want to be open
 3. Internal code and/or funky code
