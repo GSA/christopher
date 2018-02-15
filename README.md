@@ -5,11 +5,13 @@
 Named after the initial version of the Turing machine referenced as Christopher in *[The Imitation Game](https://en.wikipedia.org/wiki/The_Imitation_Game).*
 
 ---
+[![Build Status](https://circleci.com/gh/GSA/christopher.svg?style=shield)](https://circleci.com/gh/GSA/christopher)
 
-This is the first iteration of GSA's automated code scanning platform - this focuses on approved SaaS tools:
-- GSA org on GitHub.com
-- CircleCI - free version for open source projects
-- CodeClimate - free version for open source projects
+Repo for building GSA's automated code scanning platform.  More info found in the repo [wiki](https://github.com/GSA/christopher/wiki) and primarily interested in three paths of continuous code deployment w/ scanning:
+
+1. Open source code
+2. Private code repositories that want to be open
+3. Internal code and/or funky code
 
 ---
 
