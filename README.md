@@ -6,6 +6,9 @@ Named after the initial version of the Turing machine referenced as Christopher 
 
 ---
 [![Build Status](https://circleci.com/gh/GSA/christopher.svg?style=shield)](https://circleci.com/gh/GSA/christopher)
+[![Code Climate](https://codeclimate.com/github/GSA/christopher/badges/gpa.svg)](https://codeclimate.com/github/GSA/christopher)
+[![Test Coverage](https://codeclimate.com/github/GSA/christopher/badges/coverage.svg)](https://codeclimate.com/github/GSA/christopher/coverage)
+
 
 Repo for building GSA's automated code scanning platform.  As referenced on GSA Open Source Policy [repo](https://github.com/GSA/open-source-policy/blob/master/static_code_scan.md), there are two paths for using an automated code scanning pipeline.
 
