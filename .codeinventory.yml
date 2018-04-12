@@ -4,3 +4,6 @@ contact:
 languages:
   - javascript
   - ruby
+plugins:
+  csslint:
+    enabled: true
