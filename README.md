@@ -6,12 +6,14 @@ Named after the initial version of the Turing machine referenced as Christopher 
 
 ---
 [![Build Status](https://circleci.com/gh/GSA/christopher.svg?style=shield)](https://circleci.com/gh/GSA/christopher)
+[![Code Climate](https://codeclimate.com/github/GSA/christopher/badges/gpa.svg)](https://codeclimate.com/github/GSA/christopher)
+[![Test Coverage](https://codeclimate.com/github/GSA/christopher/badges/coverage.svg)](https://codeclimate.com/github/GSA/christopher/coverage)
 
-Repo for building GSA's automated code scanning platform.  More info found in the repo [wiki](https://github.com/GSA/christopher/wiki) and primarily interested in three paths of continuous code deployment w/ scanning:
 
-1. Open source code
-2. Private code repositories that want to be open
-3. Internal code and/or funky code
+Repo for building GSA's automated code scanning platform.  As referenced on GSA Open Source Policy static code scan instructions [page](https://github.com/GSA/open-source-policy/blob/master/static_code_scan.md), there are two paths for using an automated code scanning pipeline.
+
+1. Default to open (this repo)
+2. Closed source software to open source ([private repo](https://github.com/GSA/private-cto-site-cx-code-scan))
 
 ---
 
