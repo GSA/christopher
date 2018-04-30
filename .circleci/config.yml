@@ -2,7 +2,7 @@ version: 2
 
 jobs:
   build:
-    working_directory: ~/cto-website
+    working_directory: ~/christopher
     docker:
       - image: circleci/ruby:2.4-node-browsers
     steps:
@@ -10,14 +10,14 @@ jobs:
 
       # Restore bundle cache
       - type: cache-restore
-        key: cto-website-{{ checksum "Gemfile.lock" }}
+        key: christopher-{{ checksum "Gemfile.lock" }}
 
       # Install dependencies
       - run: bundle install --path vendor/bundle
 
       # Save bundle cache
       - type: cache-save
-        key: cto-website-{{ checksum "Gemfile.lock" }}
+        key: christopher-{{ checksum "Gemfile.lock" }}
         paths:
           - vendor/bundle
 
